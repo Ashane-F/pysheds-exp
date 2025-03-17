@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(
-    name="pysheds",
+    name="pyshedsash",
     version="0.4",
     description="🌎 Simple and fast watershed delineation in python.",
     long_description="🌎 Simple and fast watershed delineation in python.",
