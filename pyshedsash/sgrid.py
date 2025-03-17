@@ -22,14 +22,14 @@ except ModuleNotFoundError:
     _HAS_RASTERIO = False
 
 # Import input/output functions
-import pysheds.io
+import pyshedsash.io
 
 # Import viewing functions
-from pysheds.sview import Raster, MultiRaster
-from pysheds.sview import View, ViewFinder
+from pyshedsash.sview import Raster, MultiRaster
+from pyshedsash.sview import View, ViewFinder
 
 # Import numba functions
-import pysheds._sgrid as _self
+import pyshedsash._sgrid as _self
 from . import projection
 
 class sGrid():
@@ -219,7 +219,7 @@ class sGrid():
         out : Raster
             Raster object containing loaded data.
         """
-        return pysheds.io.read_ascii(data, skiprows=skiprows, mask=mask,
+        return pyshedsash.io.read_ascii(data, skiprows=skiprows, mask=mask,
                                      crs=crs, xll=xll, yll=yll, metadata=metadata,
                                      **kwargs)
 
@@ -255,7 +255,7 @@ class sGrid():
         out : Raster
             Raster object containing loaded data.
         """
-        return pysheds.io.read_raster(data=data, band=band, window=window,
+        return pyshedsash.io.read_raster(data=data, band=band, window=window,
                                       window_crs=window_crs, metadata=metadata,
                                       mask_geometry=mask_geometry, **kwargs)
 
@@ -306,7 +306,7 @@ class sGrid():
         """
         if target_view is None:
             target_view = self.viewfinder
-        return pysheds.io.to_ascii(data, file_name, target_view=target_view,
+        return pyshedsash.io.to_ascii(data, file_name, target_view=target_view,
                                    delimiter=delimiter, fmt=fmt, interpolation=interpolation,
                                    apply_input_mask=apply_input_mask,
                                    apply_output_mask=apply_output_mask,
@@ -362,7 +362,7 @@ class sGrid():
         """
         if target_view is None:
             target_view = self.viewfinder
-        return pysheds.io.to_raster(data, file_name, target_view=target_view,
+        return pyshedsash.io.to_raster(data, file_name, target_view=target_view,
                                     profile=profile, blockxsize=blockxsize,
                                     blockysize=blockysize,
                                     interpolation=interpolation,

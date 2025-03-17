@@ -9,7 +9,7 @@ try:
 except ModuleNotFoundError:
     _HAS_SCIPY = False
 
-import pysheds._sview as _self
+import pyshedsash._sview as _self
 
 
 class Raster(np.ndarray):

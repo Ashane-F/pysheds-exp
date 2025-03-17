@@ -34,9 +34,9 @@ _pyproj_crs = lambda Proj: Proj.crs if not _OLD_PYPROJ else Proj
 _pyproj_crs_is_geographic = 'is_latlong' if _OLD_PYPROJ else 'is_geographic'
 _pyproj_init = '+init=epsg:4326' if _OLD_PYPROJ else 'epsg:4326'
 
-from pysheds.pview import Raster
-from pysheds.pview import BaseViewFinder, RegularViewFinder, IrregularViewFinder
-from pysheds.pview import RegularGridViewer, IrregularGridViewer
+from pyshedsash.pview import Raster
+from pyshedsash.pview import BaseViewFinder, RegularViewFinder, IrregularViewFinder
+from pyshedsash.pview import RegularGridViewer, IrregularGridViewer
 
 class Grid(object):
     """

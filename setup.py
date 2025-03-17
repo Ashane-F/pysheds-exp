@@ -11,7 +11,7 @@ setup(
     author="Matt Bartos",
     author_email="mdbartos@umich.edu",
     url="http://open-storm.org",
-    packages=["pysheds"],
+    packages=["pyshedsash"],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",

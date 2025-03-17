@@ -4,7 +4,7 @@ import numpy as np
 import pyproj
 import rasterio
 from affine import Affine
-from pysheds.sview import Raster, ViewFinder, View
+from pyshedsash.sview import Raster, ViewFinder, View
 from rasterio.features import geometry_mask
 
 from . import projection

@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 from scipy import ndimage, optimize
-from pysheds.grid import Grid
-from pysheds.view import Raster
+from pyshedsash.grid import Grid
+from pyshedsash.view import Raster
 import skimage.morphology
 from itertools import combinations, chain
 
