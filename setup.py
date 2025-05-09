@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-
+#changed np.warnings in 0.5
 from setuptools import setup
 
 setup(
     name="pyshedsash",
-    version="0.4",
+    version="0.5", 
     description="🌎 Simple and fast watershed delineation in python.",
     long_description="🌎 Simple and fast watershed delineation in python.",
     long_description_content_type="text/x-rst",
