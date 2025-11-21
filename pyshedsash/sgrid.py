@@ -555,6 +555,8 @@ class sGrid():
 
     def flowdir(self, dem, routing='d8', flats=-1, pits=-2, nodata_out=None,
                 dirmap=(64, 128, 1, 2, 4, 8, 16, 32), **kwargs):
+        
+
         """
         Generates a flow direction raster from a DEM grid. Both d8 and d-infinity routing
         are supported.
